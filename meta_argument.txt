@@ -1,0 +1,11 @@
+meta arguments
+
+1. count     how many instance will create. yaha ek hi name ke d=instamce create horahe the iss liye for_each
+2. for_each  to give new insance a different name 
+3. depends_on  if this block create then only this will blcok will be created.
+
+#output for for each
+for_each = tomap({
+key = value
+key = value
+})

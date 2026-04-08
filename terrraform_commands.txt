@@ -1,0 +1,50 @@
+   terform init     #after changing the terraform block
+   terraform apply
+   terraform validate
+   terraform plan
+   terraform apply    #jab bhi apply krte h uska ek .tfstate file aur ek backup banta h
+   ssh-keygen    #To genrate private publick key
+   terraform state list
+   terraform import aws_key_pair.my_key terra-key-ec2    #to import key pair in terrform
+   terraform show list
+   terraform import aws_instance.my_new_instance i-0620db4d1666e7c06   #aws console par jo manually instance create hua h usko terform par import krne ke liye
+   terrfaorm state show aws_instance.my_new_instance
+   terraform destroy --auto-approve
+   terraform init -reconfigure
+
+   #Workspace:
+   #jaise git me branched hote h waise terraform me workspace hote hote
+   #here we are using git to connect your den environment to dev workspace.
+   #to connect you environment to your workspace. 
+   #deafult workspace ko master ke connect and dev branch ko dev workspace se connect kar rahe h 
+   #workspace speciality ye h ki isme dev ka environment and uska code alag and default ka environment and code alag
+   #dodno seperatte store ho raha h 
+   #dev ki state alag h prd ki state alag h 
+   #(workspace =dev, branch= dev, environment= dev)
+   #(workspace= default, branch= master, environment= prd )
+
+   
+   terraform workspace list
+   aws configure list
+   terraform state list
+   terraform workspace list
+   terraform workspace select default   #to go inside the default workspace
+   terraform workspace list   #all the list of workspaces
+   terraform state list     # all the states 
+   git init 
+   git checkout -b master   #to create new branch
+   gti status
+   git add .
+   git commit -m "addeddev env"
+   git checkout master
+   git checkout dev
+ 
+
+Terraform HCL
+   <block><parameter>{
+    ------
+    ------   #argument
+    -------
+   }
+
+   block = resurce, varaible, output
