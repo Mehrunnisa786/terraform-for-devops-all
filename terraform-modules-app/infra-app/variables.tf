@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7dc49d984561ed7caabe1a6a50959d9432d8bee82e072ef85146353c60a4f4cf
-size 606
+variable "env" {
+    description = "This is the environment for my infra"
+    type = string 
+}
+
+variable "bucket_name" {
+    description = "This is the bucket for my infra"
+    type = string 
+}
+
+variable "instance_count" {
+    description = "This is the no. of ec2 instance"
+    type = number
+  
+}
+variable "instance_type" {
+    description = "This is the instance type for my infra"
+    type = string
+}
+
+variable "ec2_ami_id" {
+    description = "This is the ami id for my infra"
+    type = string
+  
+}
+variable "hash-key" {
+    description = "This is the hash key for my infra app"
+    type = string
+  
+}
